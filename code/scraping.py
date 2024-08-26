@@ -439,7 +439,7 @@ with open(RESULTS_FILE, 'w', encoding='latin1') as fp:
 minutes = (time.time() - start_time) / 60
 finish_time = 'Execution took ' + str(int(minutes)) + ' minutes'
 
-with open(PATH + 'results/execution_time.txt', 'w') as fp:
+with open(PATH + '/results/execution_time.txt', 'w') as fp:
     fp.write(finish_time)
 
 
