@@ -1,0 +1,34 @@
+movies = [{
+			"id": id string, 
+			"title": string, 
+			"link": url link, 
+			"genre": string, 
+			"runtime": int number, 
+			"rating": string, 
+			"summary": string},]
+series = [{
+			"id": id string, 
+			"title": string, 
+			"link": url link, 
+			"genre": string, 
+			"seasons": int, 
+			"rating": string, 
+			"summary": string, 
+			"episodes": [{"id": string, 
+						"link": episode url link, 
+						"episode_name": string, 
+						"summary": string, 
+						"season": int, 
+						"episode": int, 
+						"runtime": int},]
+			},]
+
+
+live_tv = [{
+			"channel_name": string,
+			"link": url_link,
+			"timeline": {datetime as string: show_name as string,}
+			},
+		]
+ 
+results_json = [movies, series, live_tv]
